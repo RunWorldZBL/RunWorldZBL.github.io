@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>My World</title>
+  
+  <subtitle>欲火之痛，享受重生辉煌</subtitle>
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-08-28T02:31:29.820Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>朱小爷</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试文章</title>
+    <link href="http://yoursite.com/2020/08/28/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
+    <id>http://yoursite.com/2020/08/28/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</id>
+    <published>2020-08-28T01:56:23.165Z</published>
+    <updated>2020-08-28T02:31:29.820Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;giao!giao!giao!!!&lt;/p&gt;
+&lt;h2 id=&quot;内容1&quot;&gt;&lt;a href=&quot;#内容1&quot; class=&quot;headerlink&quot; title=&quot;内容1&quot;&gt;&lt;/a&gt;内容1&lt;/h2&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/08/27/hello-world/"/>
+    <id>http://yoursite.com/2020/08/27/hello-world/</id>
+    <published>2020-08-27T06:43:37.837Z</published>
+    <updated>2020-08-28T02:31:20.561Z</updated>
+    
+    
+    <summary type="html">点进去查看更多啊</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>
