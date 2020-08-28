@@ -1,31 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/08/27/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>前端工程化 webpack</title>
+    <url>/2020/08/28/webpack/</url>
+    <content><![CDATA[<h4 id="什么是前端工程化？"><a href="#什么是前端工程化？" class="headerlink" title="什么是前端工程化？"></a>什么是前端工程化？</h4><p>前端工程化是指将前端开发的流程规范化、标准化，包括开发流程、技术选型、代码规范、构建发布等，用于提升前端工程师的开发效率和代码质量。</p>
+<h4 id="为什么要前端工程化？"><a href="#为什么要前端工程化？" class="headerlink" title="为什么要前端工程化？"></a>为什么要前端工程化？</h4><ol>
+<li>复杂度高：前端的多功能、多页面、多状态、多系统</li>
+<li>规模大：团队开发，多人协作，代码质量管理</li>
+<li>要求高：页面性能优化（CDN/异步加载/请求合并），CSS兼容性、单页面应用、服务端渲染…<a id="more"></a>
+<h4 id="怎么做到前端工程化？"><a href="#怎么做到前端工程化？" class="headerlink" title="怎么做到前端工程化？"></a>怎么做到前端工程化？</h4></li>
+</ol>
+<ul>
+<li>从业务着手</li>
+</ul>
+<p>简单的单页面应用，使用gulp打包+同步工具实现开发全流程</p>
+<ul>
+<li>从复杂度考虑</li>
+</ul>
+<p>框架最终要服务于我们的项目，而非累死累活的去维护框架</p>
+<ul>
+<li>从已知到未知</li>
+</ul>
 ]]></content>
+      <categories>
+        <category>前端技术</category>
+      </categories>
+      <tags>
+        <tag>大前端</tag>
+        <tag>webpack</tag>
+      </tags>
   </entry>
   <entry>
-    <title>测试文章</title>
-    <url>/2020/08/28/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<p>giao!giao!giao!!!</p>
-<h2 id="内容1"><a href="#内容1" class="headerlink" title="内容1"></a>内容1</h2><a id="more"></a>
+    <title>自动化工具gulp</title>
+    <url>/2020/08/28/gulp/</url>
+    <content><![CDATA[<blockquote>
+<p>ps: 自动化工具gulp，热刷新、编译css、压缩js</p>
+</blockquote>
+<h1 id="初始gulp"><a href="#初始gulp" class="headerlink" title="初始gulp"></a>初始gulp</h1><ul>
+<li>易于使用</li>
+<li>构建快速</li>
+<li>插件系统</li>
+<li>易于学习</li>
+</ul>
+<a id="more"></a>
 
+<p><a href="https://gulpjs.com/">官方网站</a>    <a href="https://www.gulpjs.com.cn/">中文网站</a></p>
+<blockquote>
+<p>gulp的配置文件是 gulpfile.js 。当执行gulp命令时，就会在配置文件中寻处理的任务</p>
+</blockquote>
+<h2 id="gulp的概念"><a href="#gulp的概念" class="headerlink" title="gulp的概念"></a>gulp的概念</h2><p>任务：把所有的处理的文件，分成任务处理，每一个任务里都有输入和输出的文件<br><br><br>下图是执行的几个环节：<br><img data-src="https://cdn.nlark.com/yuque/0/2020/jpeg/2038522/1596959184875-9cc36ef5-34fb-46d1-9e5a-92cc7240681a.jpeg#align=left&display=inline&height=1080&margin=%5Bobject%20Object%5D&name=5e7b6abc00014f8819201080.jpg&originHeight=1080&originWidth=1920&size=75683&status=done&style=none&width=1920" alt="5e7b6abc00014f8819201080.jpg"></p>
 ]]></content>
+      <categories>
+        <category>前端技术</category>
+      </categories>
+      <tags>
+        <tag>大前端</tag>
+        <tag>gulp</tag>
+      </tags>
   </entry>
 </search>
