@@ -38,11 +38,36 @@
   </entry>
   
   <entry>
+    <title>前端工程化 webpack</title>
+    <link href="http://yoursite.com/2020/08/28/webpack/"/>
+    <id>http://yoursite.com/2020/08/28/webpack/</id>
+    <published>2020-08-28T14:11:05.813Z</published>
+    <updated>2020-08-28T08:50:11.202Z</updated>
+    
+    
+    <summary type="html">&lt;h4 id=&quot;什么是前端工程化？&quot;&gt;&lt;a href=&quot;#什么是前端工程化？&quot; class=&quot;headerlink&quot; title=&quot;什么是前端工程化？&quot;&gt;&lt;/a&gt;什么是前端工程化？&lt;/h4&gt;&lt;p&gt;前端工程化是指将前端开发的流程规范化、标准化，包括开发流程、技术选型、代码规范、构建发布等，用于提升前端工程师的开发效率和代码质量。&lt;/p&gt;
+&lt;h4 id=&quot;为什么要前端工程化？&quot;&gt;&lt;a href=&quot;#为什么要前端工程化？&quot; class=&quot;headerlink&quot; title=&quot;为什么要前端工程化？&quot;&gt;&lt;/a&gt;为什么要前端工程化？&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;复杂度高：前端的多功能、多页面、多状态、多系统&lt;/li&gt;
+&lt;li&gt;规模大：团队开发，多人协作，代码质量管理&lt;/li&gt;
+&lt;li&gt;要求高：页面性能优化（CDN/异步加载/请求合并），CSS兼容性、单页面应用、服务端渲染…&lt;/li&gt;&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="前端技术" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="大前端" scheme="http://yoursite.com/tags/%E5%A4%A7%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="webpack" scheme="http://yoursite.com/tags/webpack/"/>
+    
+  </entry>
+  
+  <entry>
     <title>自动化工具gulp</title>
     <link href="http://yoursite.com/2020/08/28/gulp/"/>
     <id>http://yoursite.com/2020/08/28/gulp/</id>
     <published>2020-08-28T14:11:05.811Z</published>
-    <updated>2020-08-28T09:18:53.284Z</updated>
+    <updated>2020-08-28T14:49:00.117Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -63,31 +88,6 @@
     <category term="大前端" scheme="http://yoursite.com/tags/%E5%A4%A7%E5%89%8D%E7%AB%AF/"/>
     
     <category term="gulp" scheme="http://yoursite.com/tags/gulp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端工程化 webpack</title>
-    <link href="http://yoursite.com/2020/08/28/webpack/"/>
-    <id>http://yoursite.com/2020/08/28/webpack/</id>
-    <published>2020-08-28T03:03:19.481Z</published>
-    <updated>2020-08-28T08:50:11.202Z</updated>
-    
-    
-    <summary type="html">&lt;h4 id=&quot;什么是前端工程化？&quot;&gt;&lt;a href=&quot;#什么是前端工程化？&quot; class=&quot;headerlink&quot; title=&quot;什么是前端工程化？&quot;&gt;&lt;/a&gt;什么是前端工程化？&lt;/h4&gt;&lt;p&gt;前端工程化是指将前端开发的流程规范化、标准化，包括开发流程、技术选型、代码规范、构建发布等，用于提升前端工程师的开发效率和代码质量。&lt;/p&gt;
-&lt;h4 id=&quot;为什么要前端工程化？&quot;&gt;&lt;a href=&quot;#为什么要前端工程化？&quot; class=&quot;headerlink&quot; title=&quot;为什么要前端工程化？&quot;&gt;&lt;/a&gt;为什么要前端工程化？&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;复杂度高：前端的多功能、多页面、多状态、多系统&lt;/li&gt;
-&lt;li&gt;规模大：团队开发，多人协作，代码质量管理&lt;/li&gt;
-&lt;li&gt;要求高：页面性能优化（CDN/异步加载/请求合并），CSS兼容性、单页面应用、服务端渲染…&lt;/li&gt;&lt;/ol&gt;</summary>
-    
-    
-    
-    <category term="前端技术" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="大前端" scheme="http://yoursite.com/tags/%E5%A4%A7%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="webpack" scheme="http://yoursite.com/tags/webpack/"/>
     
   </entry>
   

@@ -1636,6 +1636,10 @@ pre code {
   display: inline-block;
   margin: 0 5px;
 }
+.busuanzi-value {
+  color: #1890ff;
+  padding: 0 3px;
+}
 @-moz-keyframes icon-animate {
   0%, 100% {
     transform: scale(1);
