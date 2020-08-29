@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-28T14:49:55.624Z</updated>
+  <updated>2020-08-29T02:39:26.764Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,20 +20,20 @@
     <title>webpack五大核心概念</title>
     <link href="http://yoursite.com/2020/08/28/webpack%E4%BA%94%E5%A4%A7%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/"/>
     <id>http://yoursite.com/2020/08/28/webpack%E4%BA%94%E5%A4%A7%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/</id>
-    <published>2020-08-28T14:49:24.000Z</published>
-    <updated>2020-08-28T14:49:55.624Z</updated>
+    <published>2020-08-28T14:49:24.298Z</published>
+    <updated>2020-08-29T02:39:26.764Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img</summary>
-        
-      
+    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;https://cdn.nlark.com/yuque/0/2020/png/1670861/1593610346026-ac5d5fe1-6cd6-435b-8433-fb8f01b0539b.png#align=left&amp;display=inline&amp;height=618&amp;margin=%5Bobject%20Object%5D&amp;originHeight=618&amp;originWidth=1148&amp;status=done&amp;style=none&amp;width=1148&quot;&gt;&lt;br&gt;&lt;a href=&quot;https://www.webpackjs.com/&quot;&gt;webpage 中文官网&lt;/a&gt;&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
+    <category term="前端技术" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="大前端" scheme="http://yoursite.com/tags/%E5%A4%A7%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="webpack" scheme="http://yoursite.com/tags/webpack/"/>
     
   </entry>
   

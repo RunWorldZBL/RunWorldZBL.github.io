@@ -304,38 +304,33 @@
 
         <div class="post-meta-container">
           <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-08-29 10:39:26" itemprop="dateModified" datetime="2020-08-29T10:39:26+08:00">2020-08-29</time>
       </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2020-08-28 22:49:24 / 修改时间：22:49:55" itemprop="dateCreated datePublished" datetime="2020-08-28T22:49:24+08:00">2020-08-28</time>
-    </span>
 
   
-    <span id="/2020/08/28/webpack%E4%BA%94%E5%A4%A7%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/" class="post-meta-item leancloud_visitors" data-flag-title="webpack五大核心概念" title="阅读次数">
+  
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
+        <i class="far fa-file-word"></i>
       </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span></span>
     </span>
-  
-  <span class="post-meta-item">
-    
+    <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-clock"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/08/28/webpack%E4%BA%94%E5%A4%A7%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/08/28/webpack%E4%BA%94%E5%A4%A7%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>NaN:aN</span>
+    </span>
 </div>
 
         </div>
@@ -345,22 +340,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p><img data-src="https://cdn.nlark.com/yuque/0/2020/png/1670861/1593610346026-ac5d5fe1-6cd6-435b-8433-fb8f01b0539b.png#align=left&display=inline&height=618&margin=%5Bobject%20Object%5D&originHeight=618&originWidth=1148&status=done&style=none&width=1148"><br><a target="_blank" rel="noopener" href="https://www.webpackjs.com/">webpage中文官网</a><br></p>
-<p><a name="g704F"></a></p>
-<h3 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h3><p><a name="jUAPO"></a></p>
-<h4 id="入口"><a href="#入口" class="headerlink" title="入口"></a>入口</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">	entry: <span class="string">&#x27;./path/to/my/enter/file.js&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">告知webpack从哪个文件开始去阅读去查验代码</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-<p><a name="bW4uG"></a></p>
-<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">	entry: <span class="string">&#x27;./path/to/my/enter/file.js&#x27;</span>,</span><br><span class="line">  output: &#123;</span><br><span class="line">  	path: path.resolve(__dirname, <span class="string">&#x27;dist&#x27;</span>),</span><br><span class="line">    filename: <span class="string">&#x27;my-first-webpack.bundle.js&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">output是webpack给出的结果</span></span><br><span class="line"><span class="comment">打包出的路径是什么，名字是什么…</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-<p><a name="By6cH"></a></p>
-<h4 id="Loader"><a href="#Loader" class="headerlink" title="Loader"></a>Loader</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">	output: &#123;</span><br><span class="line">  	filename: <span class="string">&#x27;my-first-webpack.bundle.js&#x27;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="built_in">module</span>: &#123;</span><br><span class="line">  	rules: [</span><br><span class="line">      &#123; <span class="attr">test</span>: <span class="regexp">/\.txt$/</span>, use: <span class="string">&#x27;raw-loader&#x27;</span> &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">raw-loader去处理txt文件</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-<p><a name="kCe8r"></a></p>
-<h4 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> HtmlWebpackPlugin = <span class="built_in">require</span>(<span class="string">&#x27;html-webpack-plugin&#x27;</span>); <span class="comment">//npm安装</span></span><br><span class="line"><span class="keyword">const</span> webpack = <span class="built_in">require</span>(<span class="string">&#x27;webpack&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">	<span class="built_in">module</span>: &#123;</span><br><span class="line">  	rules: [</span><br><span class="line">      &#123; <span class="attr">test</span>: <span class="regexp">/\.txt$/</span>, use: <span class="string">&#x27;raw-loader&#x27;</span> &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  plugins: [</span><br><span class="line">  	<span class="keyword">new</span> HtmlWebpackPlugin(&#123;<span class="attr">template</span>: <span class="string">&#x27;./src/index.html&#x27;</span>&#125;)</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>loader 处理webpack本身不能处理的文件，即非js文件<br>plugins 能处理更复杂的任务<br><a name="g3XxB"></a></p>
-<h4 id="模式-兼容性"><a href="#模式-兼容性" class="headerlink" title="模式/兼容性"></a>模式/兼容性</h4><p>webpack支持所有符合ES5标准的浏览器（不支持IE8及以下的版本）。webpack的import()和require.ensure()需要promise。如果你想要支持旧版本浏览器，在使用这些表达式之前，还需要提前加载polyfill。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save babel-polyfill</span><br></pre></td></tr></table></figure>
-<p>然后，使用 import 将其导入到主bundle文件：<br><strong>src/index.js</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">&#x27;babel-polyfill&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">component</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> element = <span class="built_in">document</span>.createElement(<span class="string">&#x27;div&#x27;</span>);</span><br><span class="line">  element.innerHTML = join([<span class="string">&#x27;Hello&#x27;</span>, <span class="string">&#x27;webpack&#x27;</span>], <span class="string">&#x27; &#x27;</span>);</span><br><span class="line">  <span class="keyword">return</span> element;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.body.appendChild(component());</span><br></pre></td></tr></table></figure>
-
+          <p><img data-src="https://cdn.nlark.com/yuque/0/2020/png/1670861/1593610346026-ac5d5fe1-6cd6-435b-8433-fb8f01b0539b.png#align=left&display=inline&height=618&margin=%5Bobject%20Object%5D&originHeight=618&originWidth=1148&status=done&style=none&width=1148"><br><a target="_blank" rel="noopener" href="https://www.webpackjs.com/">webpage 中文官网</a><br></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/08/28/webpack%E4%BA%94%E5%A4%A7%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -403,47 +391,33 @@
 
         <div class="post-meta-container">
           <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2020-08-28 22:11:05 / 修改时间：17:18:53" itemprop="dateCreated datePublished" datetime="2020-08-28T22:11:05+08:00">2020-08-28</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">前端技术</span></a>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
         </span>
-    </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-08-28 17:18:53" itemprop="dateModified" datetime="2020-08-28T17:18:53+08:00">2020-08-28</time>
+      </span>
 
   
-    <span id="/2020/08/28/gulp/" class="post-meta-item leancloud_visitors" data-flag-title="自动化工具gulp" title="阅读次数">
+  
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
+        <i class="far fa-file-word"></i>
       </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span></span>
     </span>
-  
-  <span class="post-meta-item">
-    
+    <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-clock"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/08/28/gulp/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/08/28/gulp/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>NaN:aN</span>
+    </span>
 </div>
 
         </div>
@@ -512,47 +486,33 @@
 
         <div class="post-meta-container">
           <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2020-08-28 11:03:19 / 修改时间：16:50:11" itemprop="dateCreated datePublished" datetime="2020-08-28T11:03:19+08:00">2020-08-28</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">前端技术</span></a>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
         </span>
-    </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-08-28 16:50:11" itemprop="dateModified" datetime="2020-08-28T16:50:11+08:00">2020-08-28</time>
+      </span>
 
   
-    <span id="/2020/08/28/webpack/" class="post-meta-item leancloud_visitors" data-flag-title="前端工程化 webpack" title="阅读次数">
+  
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
+        <i class="far fa-file-word"></i>
       </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span></span>
     </span>
-  
-  <span class="post-meta-item">
-    
+    <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-clock"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/08/28/webpack/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/08/28/webpack/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>NaN:aN</span>
+    </span>
 </div>
 
         </div>
@@ -638,25 +598,15 @@
   </span>
   <span class="author" itemprop="copyrightHolder">朱小爷</span>
 </div>
-  <div class="powered-by">由 <a href="https://zbl.ink/" class="theme-link" rel="noopener" target="_blank">朱柄林</a> 强力驱动
+  <div class="powered-by">由 <a href="https://zbl.ink/" class="theme-link" rel="noopener" target="_blank">朱柄林</a> 制作
   </div>
 <div class="busuanzi-count">
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="总访客量">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
-    </span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="总访问量">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>
+       <span class="site-uv">
+         我的第 <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 位朋友，
+        </span>
+       <span class="site-pv">
+         历经 <span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次回眸才与你相遇
+       </span>
 </div>
 
     </div>
@@ -708,7 +658,7 @@ NexT.utils.loadComments('#valine-comments', () => {
     new Valine(Object.assign({
       el  : '#valine-comments',
       path: "/",
-    }, {"enable":true,"appId":"Fo8DRTzirAsGmLvmBdWzgxmo-gzGzoHsz","appKey":"ISu5jGkS86qgBlvOjP45AxRk","placeholder":"说点什么吧~~~","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-cn","visitor":true,"comment_count":true,"recordIP":false,"serverURLs":null,"enableQQ":false,"requiredFields":["nick","mail"]}
+    }, {"enable":true,"appId":"Fo8DRTzirAsGmLvmBdWzgxmo-gzGzoHsz","appKey":"ISu5jGkS86qgBlvOjP45AxRk","placeholder":"说点什么吧~~~","avatar":"mm","meta":["nick"],"pageSize":10,"lang":"zh-cn","visitor":false,"comment_count":false,"recordIP":false,"serverURLs":null,"enableQQ":false,"requiredFields":["nick"]}
     ));
   }, window.Valine);
 });
