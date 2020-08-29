@@ -59,9 +59,9 @@
       </tags>
   </entry>
   <entry>
-    <title>webpack五大核心概念</title>
-    <url>/2020/08/28/webpack%E4%BA%94%E5%A4%A7%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<p><img data-src="https://cdn.nlark.com/yuque/0/2020/png/1670861/1593610346026-ac5d5fe1-6cd6-435b-8433-fb8f01b0539b.png#align=left&display=inline&height=618&margin=%5Bobject%20Object%5D&originHeight=618&originWidth=1148&status=done&style=none&width=1148"><br><a href="https://www.webpackjs.com/">webpage 中文官网</a><br></p>
+    <title>webpack 五大核心概念</title>
+    <url>/2020/08/29/webpack-concept/</url>
+    <content><![CDATA[<p><img data-src="./webpack.png" alt="webpack 概念图"><br><a href="https://www.webpackjs.com/">webpage 中文官网</a><br></p>
 <a id="more"></a>
 <p><a name="g704F"></a></p>
 <h3 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h3><p><a name="jUAPO"></a></p>
