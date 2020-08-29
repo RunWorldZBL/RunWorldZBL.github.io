@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-29T06:03:27.550Z</updated>
+  <updated>2020-08-29T06:20:07.075Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,10 +21,10 @@
     <link href="http://yoursite.com/2020/08/29/webpack-concept/"/>
     <id>http://yoursite.com/2020/08/29/webpack-concept/</id>
     <published>2020-08-29T05:58:28.290Z</published>
-    <updated>2020-08-29T06:03:27.550Z</updated>
+    <updated>2020-08-29T06:20:07.075Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;./webpack.png&quot; alt=&quot;webpack 概念图&quot;&gt;&lt;br&gt;&lt;a href=&quot;https://www.webpackjs.com/&quot;&gt;webpage 中文官网&lt;/a&gt;&lt;br&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;http://zblh.gitee.io/blog-img/webpack.png&quot; alt=&quot;webpack 概念图&quot;&gt;&lt;br&gt;&lt;a href=&quot;https://www.webpackjs.com/&quot;&gt;webpage 中文官网&lt;/a&gt;&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
